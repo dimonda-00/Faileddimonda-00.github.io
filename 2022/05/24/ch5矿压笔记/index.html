@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 6.1.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"example.com","root":"/","scheme":"Mist","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
+  </script>
+
+  <meta name="description" content="采场顶板控制及支护方法 垂直方向上，支架处于直接顶——支架——底板的支承体系中。推进方向上，支架处于煤壁——支架——采空区矸石的支撑体系中。 回采工作面支架必须具有（1）：一定的可缩性（2）：良好的支撑性能顶板分类和底板特征 直接顶分类： 裂隙分类：原生裂隙，构造裂隙，压裂裂隙。 裂隙与上覆岩层位置关系：（1）R1：平行于层面（2）R2：垂直于层面（3）R3：向煤壁方向倾斜（4）R4：向采空区倾斜">
+<meta property="og:type" content="article">
+<meta property="og:title" content="矿压笔记-3">
+<meta property="og:url" content="http://example.com/2022/05/24/ch5%E7%9F%BF%E5%8E%8B%E7%AC%94%E8%AE%B0/index.html">
+<meta property="og:site_name" content="CMCanteen&#39;s BLOG">
+<meta property="og:description" content="采场顶板控制及支护方法 垂直方向上，支架处于直接顶——支架——底板的支承体系中。推进方向上，支架处于煤壁——支架——采空区矸石的支撑体系中。 回采工作面支架必须具有（1）：一定的可缩性（2）：良好的支撑性能顶板分类和底板特征 直接顶分类： 裂隙分类：原生裂隙，构造裂隙，压裂裂隙。 裂隙与上覆岩层位置关系：（1）R1：平行于层面（2）R2：垂直于层面（3）R3：向煤壁方向倾斜（4）R4：向采空区倾斜">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2022-05-24T02:00:00.000Z">
+<meta property="article:modified_time" content="2022-05-24T12:31:24.000Z">
+<meta property="article:author" content="CMCanteen">
+<meta property="article:tag" content="笔记">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="http://example.com/2022/05/24/ch5%E7%9F%BF%E5%8E%8B%E7%AC%94%E8%AE%B0/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>矿压笔记-3 | CMCanteen's BLOG</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+<link rel="alternate" href="/atom.xml" title="CMCanteen's BLOG" type="application/atom+xml">
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">CMCanteen's BLOG</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">这里是小标题？</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
+
+  </li>
+  </ul>
+</nav>
+
+
+
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2022/05/24/ch5%E7%9F%BF%E5%8E%8B%E7%AC%94%E8%AE%B0/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.jpg">
+      <meta itemprop="name" content="CMCanteen">
+      <meta itemprop="description" content="menu">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="CMCanteen's BLOG">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          矿压笔记-3
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2022-05-24 10:00:00 / 修改时间：20:31:24" itemprop="dateCreated datePublished" datetime="2022-05-24T10:00:00+08:00">2022-05-24</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <h1 id="采场顶板控制及支护方法"><a href="#采场顶板控制及支护方法" class="headerlink" title="采场顶板控制及支护方法"></a>采场顶板控制及支护方法</h1><ul>
+<li>垂直方向上，支架处于直接顶——支架——底板的支承体系中。<br>推进方向上，支架处于煤壁——支架——采空区矸石的支撑体系中。</li>
+<li>回采工作面支架必须具有（1）：一定的可缩性（2）：良好的支撑性能<h2 id="顶板分类和底板特征"><a href="#顶板分类和底板特征" class="headerlink" title="顶板分类和底板特征"></a>顶板分类和底板特征</h2></li>
+<li>直接顶分类：<ul>
+<li>裂隙分类：原生裂隙，构造裂隙，压裂裂隙。</li>
+<li>裂隙与上覆岩层位置关系：<br>（1）R1：平行于层面<br>（2）R2：垂直于层面<br>（3）R3：向煤壁方向倾斜<br>（4）R4：向采空区倾斜<br>（5）R5：楔形裂隙</li>
+<li><strong>煤炭工业部标准：</strong><br>$L_0$：初次垮落步距<br>（1）不稳定顶板：<br>1a：$L_0 \le 4$<br>1b：$L_0 \le 8$<br>（2）中等稳定顶板<br>2a：$L_0 \le 12$<br>2b：$L_0 \le 18$<br>（3）稳定顶板：<br>$L_0 \le 28$<br>（4）非常稳定顶板：<br>$L_0 \le 50 $</li>
+</ul>
+</li>
+<li>基本顶分类：<br>$K<em>m=h/m$ ：直接顶厚度与煤层采高之比：直接充填系数。<br>I:$K</em> m&gt;3-5$：无周期来压或来压不明显顶板。<br>II：$0.3&lt;K<em> m&lt;=3-5$:有周期来压的顶板。<br>III$K</em> m&lt;=0.3$,甚至没有直接顶：称为周期来压严重的顶板。<br>IV：基本顶特别坚硬，无直接顶：极坚硬顶板。<br>V:能塑性弯曲的顶板。</li>
+</ul>
+<p>四级分类：<br>I：不明显，$K_m&gt;3-5$<br>II:明显，$0.3<K_m<3-5$,$L=25-30m$
+III:强烈，$0.3<K_m<3-5$,$L>50m$或者$Km<0.3,L=25-50m$
+IV:极强烈,$K_m<0.3/L>50m$</p>
+<ul>
+<li>底板特征与分类：<br>实践中为防止支柱插底，常采取穿柱鞋的方法。<h2 id="采场支架类型与顶板支护方式"><a href="#采场支架类型与顶板支护方式" class="headerlink" title="采场支架类型与顶板支护方式"></a>采场支架类型与顶板支护方式</h2></li>
+<li>液压支架特性曲线呈现恒阻特性：支柱安设后，随着活柱下缩，支架工作阻力不变。</li>
+<li>初撑力：液压支架泵压对顶板最初形成的主动力。</li>
+<li>最大工作阻力：支柱受顶板压力作用反映出的力称为工作阻力；支柱所能承受的最大负载即为最大工作阻力。<br><strong>液压支架在矿机背过了</strong>——跳过<h2 id="采场支架与围岩相互作用关系"><a href="#采场支架与围岩相互作用关系" class="headerlink" title="采场支架与围岩相互作用关系"></a>采场支架与围岩相互作用关系</h2></li>
+<li>支架与围岩相互作用的特点：<br>（1）：支架与围岩是相互作用的一对力，小范围内，两者为作用力与反作用力，两者互相适应，大小相等，作用点相同。<br>（2）：支架受力大小与回采工作面分布规律、支架性能、围岩性质（支架与围岩形成的总特性）有关。<br>（3）：支架结构与尺寸对顶板压力存在影响。</li>
+<li>支架与围岩体系的刚度模型<br>（1）支架刚度：一般指支架增阻阶段的刚度。<br>（2）直接顶刚度：反应其承载特性和整体力学特性。<br>（3）底板刚度：/<br>（4）支架与围岩体系刚度：直接顶——支架——底板形成串联刚度系统<br>$1/K=1/K_r+1/K_s+1/K_f$<br>$K$为系统刚度。</li>
+<li>采场支架工作状态<br>$K<em>sK_r/(K_s+K_r)\Delta_s=K</em>{ss}\Delta <em>s=K_r\Delta</em>{sr}$     S：支架，R：直接顶<br>总结：<br>（1）Kr/Ks&gt;4:系统变形主要由支架承担。支架工作状态为给定变形。<br>（2）Kr/Ks&lt;0.25：系统变形主要由直接顶承担。支架工作状态为给定载荷。<br>（3）在上两个区间中：变形由两者共同承担。<br>$\Delta_{ss}=K_r/(K_r+K_s)\Delta_s$<h2 id="采场顶板支护设计方法"><a href="#采场顶板支护设计方法" class="headerlink" title="采场顶板支护设计方法"></a>采场顶板支护设计方法</h2></li>
+<li>支架规格：<br>$H<em>h=M</em>{max}$<br>$H<em>m=M</em>{min}-s_2-a$<ul>
+<li>最小采高减顶板下沉减去卸载高度</li>
+</ul>
+</li>
+<li>支架工作性能确定：<br>（1）采高重度法：$P=pl_mS_c/Ks$<br>$P$：支架额定阻力<br>$S_c$：支架中心距<br>$l_m$：支架控顶距<br>$K_s$支架支承效率<br>（2）砌体梁平衡估算法：<br>$P_h=\sum h\gamma+[2-L_2tan(\phi-\theta)/(2(H-\delta))]Q$<br>$P=(\sum h \gamma+Q_2)S_c/K_s$<h2 id="采场顶板来压预报和支护质量检测"><a href="#采场顶板来压预报和支护质量检测" class="headerlink" title="采场顶板来压预报和支护质量检测"></a>采场顶板来压预报和支护质量检测</h2>略<h2 id="采场端面冒顶机理与防治"><a href="#采场端面冒顶机理与防治" class="headerlink" title="采场端面冒顶机理与防治"></a>采场端面冒顶机理与防治</h2>影响因素：基本顶活动；端面距；顶梁抬头角和低头角；初撑力。[注浆加固也能防治]<h2 id="坚硬顶板大面积来压防治"><a href="#坚硬顶板大面积来压防治" class="headerlink" title="坚硬顶板大面积来压防治"></a>坚硬顶板大面积来压防治</h2>预兆：</li>
+<li>顶板断裂声响的频率和音量增大，煤帮变形和片帮，巷道底鼓，顶板下沉量增大，顶板出现裂缝或者淋水加大。<br>防治：</li>
+<li>顶板高压注水致裂</li>
+<li>爆破强制放顶</li>
+<li>地面深孔放顶<h2 id="浅埋煤层矿山压力与岩层控制"><a href="#浅埋煤层矿山压力与岩层控制" class="headerlink" title="浅埋煤层矿山压力与岩层控制"></a>浅埋煤层矿山压力与岩层控制</h2></li>
+<li>厚风积沙复合单一关键层结构失稳致灾机理：关键层破断导致上覆岩层整体破断，无法形成砌体梁结构导致压架。</li>
+<li>压架防治：提高支架工作阻力。</li>
+<li>过地表沟谷地形上坡段结构失稳致灾机理：主关键层破断块体缺失侧向水平挤压力作用，无法形成稳定结构导致失稳。</li>
+<li>压架防治：危险区域预测，工作面来压预报，支护质量监测，增大支架工作阻力。</li>
+<li>近距离煤层重复采动上覆集中煤柱致灾机理：关键块结构不满足自稳条件，导致滑落失稳。</li>
+<li>压架防治：优化开采设计，实施采前预防措施，采时跟踪防范。<h2 id="松散承压含水层下大面积压架防治"><a href="#松散承压含水层下大面积压架防治" class="headerlink" title="松散承压含水层下大面积压架防治"></a>松散承压含水层下大面积压架防治</h2></li>
+<li>致灾机理：由于松散承压含水层的载荷传递作用，导致下部基岩整体破断和砌体梁滑落失稳，使得顶板裂隙发育至含水层导致突水。</li>
+<li>压架防治：危险预测，采前防范，采动预警，实时调控。<h2 id="大倾角煤层采场围岩控制："><a href="#大倾角煤层采场围岩控制：" class="headerlink" title="大倾角煤层采场围岩控制："></a>大倾角煤层采场围岩控制：</h2></li>
+<li>方法：<br>采用具备防倒防滑等功能支架，减轻支架重量；<br>带压擦顶移架，防止架前漏矸；<br>排头排尾成组，端头采用端头支架；<br>剔除底板软弱夹层。<h2 id="综放开采矿山压力与岩层控制"><a href="#综放开采矿山压力与岩层控制" class="headerlink" title="综放开采矿山压力与岩层控制"></a>综放开采矿山压力与岩层控制</h2></li>
+<li>顶煤破坏过程描述与分区：<br>（1）原始状态区：原岩应力状态<br>（2）压缩变形区：体积压缩，顶煤少量变形移动。<br>（3）拉剪破坏区：顶煤破碎，体积扩容。<br>（4）散体冒放区：支架尾部，顶煤冒落。</li>
+<li>影响顶煤冒放性因素：煤体强度，煤体裂隙分布，顶煤厚度，夹矸。</li>
+<li>矿压显现规律：<br>（1）支承压力分布范围大，峰值点前移，支承压力集中系数无明显变化。<br>（2）工作面支架载荷不大。<br>（3）煤壁及顶板易破碎。<br>（4）端头与平巷压力不大。<br>（5）支架前柱阻力大于后柱。</li>
+<li>事故防治：<br>（1）降低顶煤刚度：顶煤爆破/注水。<br>（2）支架合理工作阻力确定。<h1 id="sum"><a href="#sum" class="headerlink" title="sum"></a>sum</h1>还是背</li>
+</ul>
+
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/%E7%AC%94%E8%AE%B0/" rel="tag"># 笔记</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2022/05/24/ch6-ch7%E7%9F%BF%E5%8E%8B%E7%AC%94%E8%AE%B0/" rel="prev" title="矿压笔记-4">
+      <i class="fa fa-chevron-left"></i> 矿压笔记-4
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/2022/05/24/ch4%E7%9F%BF%E5%8E%8B%E7%AC%94%E8%AE%B0/" rel="next" title="矿压笔记-2">
+      矿压笔记-2 <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E9%87%87%E5%9C%BA%E9%A1%B6%E6%9D%BF%E6%8E%A7%E5%88%B6%E5%8F%8A%E6%94%AF%E6%8A%A4%E6%96%B9%E6%B3%95"><span class="nav-number">1.</span> <span class="nav-text">采场顶板控制及支护方法</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%A1%B6%E6%9D%BF%E5%88%86%E7%B1%BB%E5%92%8C%E5%BA%95%E6%9D%BF%E7%89%B9%E5%BE%81"><span class="nav-number">1.1.</span> <span class="nav-text">顶板分类和底板特征</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%87%87%E5%9C%BA%E6%94%AF%E6%9E%B6%E7%B1%BB%E5%9E%8B%E4%B8%8E%E9%A1%B6%E6%9D%BF%E6%94%AF%E6%8A%A4%E6%96%B9%E5%BC%8F"><span class="nav-number">1.2.</span> <span class="nav-text">采场支架类型与顶板支护方式</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%87%87%E5%9C%BA%E6%94%AF%E6%9E%B6%E4%B8%8E%E5%9B%B4%E5%B2%A9%E7%9B%B8%E4%BA%92%E4%BD%9C%E7%94%A8%E5%85%B3%E7%B3%BB"><span class="nav-number">1.3.</span> <span class="nav-text">采场支架与围岩相互作用关系</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%87%87%E5%9C%BA%E9%A1%B6%E6%9D%BF%E6%94%AF%E6%8A%A4%E8%AE%BE%E8%AE%A1%E6%96%B9%E6%B3%95"><span class="nav-number">1.4.</span> <span class="nav-text">采场顶板支护设计方法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%87%87%E5%9C%BA%E9%A1%B6%E6%9D%BF%E6%9D%A5%E5%8E%8B%E9%A2%84%E6%8A%A5%E5%92%8C%E6%94%AF%E6%8A%A4%E8%B4%A8%E9%87%8F%E6%A3%80%E6%B5%8B"><span class="nav-number">1.5.</span> <span class="nav-text">采场顶板来压预报和支护质量检测</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%87%87%E5%9C%BA%E7%AB%AF%E9%9D%A2%E5%86%92%E9%A1%B6%E6%9C%BA%E7%90%86%E4%B8%8E%E9%98%B2%E6%B2%BB"><span class="nav-number">1.6.</span> <span class="nav-text">采场端面冒顶机理与防治</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%9D%9A%E7%A1%AC%E9%A1%B6%E6%9D%BF%E5%A4%A7%E9%9D%A2%E7%A7%AF%E6%9D%A5%E5%8E%8B%E9%98%B2%E6%B2%BB"><span class="nav-number">1.7.</span> <span class="nav-text">坚硬顶板大面积来压防治</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%B5%85%E5%9F%8B%E7%85%A4%E5%B1%82%E7%9F%BF%E5%B1%B1%E5%8E%8B%E5%8A%9B%E4%B8%8E%E5%B2%A9%E5%B1%82%E6%8E%A7%E5%88%B6"><span class="nav-number">1.8.</span> <span class="nav-text">浅埋煤层矿山压力与岩层控制</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%9D%BE%E6%95%A3%E6%89%BF%E5%8E%8B%E5%90%AB%E6%B0%B4%E5%B1%82%E4%B8%8B%E5%A4%A7%E9%9D%A2%E7%A7%AF%E5%8E%8B%E6%9E%B6%E9%98%B2%E6%B2%BB"><span class="nav-number">1.9.</span> <span class="nav-text">松散承压含水层下大面积压架防治</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%A4%A7%E5%80%BE%E8%A7%92%E7%85%A4%E5%B1%82%E9%87%87%E5%9C%BA%E5%9B%B4%E5%B2%A9%E6%8E%A7%E5%88%B6%EF%BC%9A"><span class="nav-number">1.10.</span> <span class="nav-text">大倾角煤层采场围岩控制：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%BB%BC%E6%94%BE%E5%BC%80%E9%87%87%E7%9F%BF%E5%B1%B1%E5%8E%8B%E5%8A%9B%E4%B8%8E%E5%B2%A9%E5%B1%82%E6%8E%A7%E5%88%B6"><span class="nav-number">1.11.</span> <span class="nav-text">综放开采矿山压力与岩层控制</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#sum"><span class="nav-number">2.</span> <span class="nav-text">sum</span></a></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="CMCanteen"
+      src="/images/avatar.jpg">
+  <p class="site-author-name" itemprop="name">CMCanteen</p>
+  <div class="site-description" itemprop="description">menu</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">7</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">2</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2022</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">CMCanteen</span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://mist.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Mist</a> 强力驱动
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/muse.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+      
+
+<script>
+  if (typeof MathJax === 'undefined') {
+    window.MathJax = {
+      loader: {
+          load: ['[tex]/mhchem'],
+        source: {
+          '[tex]/amsCd': '[tex]/amscd',
+          '[tex]/AMScd': '[tex]/amscd'
+        }
+      },
+      tex: {
+        inlineMath: {'[+]': [['$', '$']]},
+          packages: {'[+]': ['mhchem']},
+        tags: 'ams'
+      },
+      options: {
+        renderActions: {
+          findScript: [10, doc => {
+            document.querySelectorAll('script[type^="math/tex"]').forEach(node => {
+              const display = !!node.type.match(/; *mode=display/);
+              const math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display);
+              const text = document.createTextNode('');
+              node.parentNode.replaceChild(text, node);
+              math.start = {node: text, delim: '', n: 0};
+              math.end = {node: text, delim: '', n: 0};
+              doc.math.push(math);
+            });
+          }, '', false],
+          insertedScript: [200, () => {
+            document.querySelectorAll('mjx-container').forEach(node => {
+              let target = node.parentNode;
+              if (target.nodeName.toLowerCase() === 'li') {
+                target.parentNode.classList.add('has-jax');
+              }
+            });
+          }, '', false]
+        }
+      }
+    };
+    (function () {
+      var script = document.createElement('script');
+      script.src = '//cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js';
+      script.defer = true;
+      document.head.appendChild(script);
+    })();
+  } else {
+    MathJax.startup.document.state(0);
+    MathJax.texReset();
+    MathJax.typeset();
+  }
+</script>
+
+    
+
+  
+
+</body>
+</html>

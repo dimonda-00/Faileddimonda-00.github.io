@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 6.1.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"example.com","root":"/","scheme":"Mist","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
+  </script>
+
+  <meta name="description" content="采区巷道矿压显现与控制 原岩体内掘进巷道引起的围岩应力：巷道掘进引起围岩应力集中，重新分布。从内至外分别为：破裂区，塑性区，弹性区，原始应力区。 支承压力显现的特征：塑性区宽度，支承压力峰值位置，支承压力影响范围，应力集中系数K（支承压力峰值&#x2F;原岩铅直应力） 巷道围岩应力影响带：巷道围岩应力受燃动的区域（超过原岩应力值5%） 构造应力：指地壳构造运动在岩体中引起的应力，以水平应力为主，有明显方向性">
+<meta property="og:type" content="article">
+<meta property="og:title" content="矿压笔记-4">
+<meta property="og:url" content="http://example.com/2022/05/24/ch6-ch7%E7%9F%BF%E5%8E%8B%E7%AC%94%E8%AE%B0/index.html">
+<meta property="og:site_name" content="CMCanteen&#39;s BLOG">
+<meta property="og:description" content="采区巷道矿压显现与控制 原岩体内掘进巷道引起的围岩应力：巷道掘进引起围岩应力集中，重新分布。从内至外分别为：破裂区，塑性区，弹性区，原始应力区。 支承压力显现的特征：塑性区宽度，支承压力峰值位置，支承压力影响范围，应力集中系数K（支承压力峰值&#x2F;原岩铅直应力） 巷道围岩应力影响带：巷道围岩应力受燃动的区域（超过原岩应力值5%） 构造应力：指地壳构造运动在岩体中引起的应力，以水平应力为主，有明显方向性">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2022-05-24T02:00:00.000Z">
+<meta property="article:modified_time" content="2022-05-24T12:31:24.000Z">
+<meta property="article:author" content="CMCanteen">
+<meta property="article:tag" content="笔记">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="http://example.com/2022/05/24/ch6-ch7%E7%9F%BF%E5%8E%8B%E7%AC%94%E8%AE%B0/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>矿压笔记-4 | CMCanteen's BLOG</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+<link rel="alternate" href="/atom.xml" title="CMCanteen's BLOG" type="application/atom+xml">
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">CMCanteen's BLOG</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">这里是小标题？</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
+
+  </li>
+  </ul>
+</nav>
+
+
+
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2022/05/24/ch6-ch7%E7%9F%BF%E5%8E%8B%E7%AC%94%E8%AE%B0/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.jpg">
+      <meta itemprop="name" content="CMCanteen">
+      <meta itemprop="description" content="menu">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="CMCanteen's BLOG">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          矿压笔记-4
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2022-05-24 10:00:00 / 修改时间：20:31:24" itemprop="dateCreated datePublished" datetime="2022-05-24T10:00:00+08:00">2022-05-24</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <h1 id="采区巷道矿压显现与控制"><a href="#采区巷道矿压显现与控制" class="headerlink" title="采区巷道矿压显现与控制"></a>采区巷道矿压显现与控制</h1><ul>
+<li>原岩体内掘进巷道引起的围岩应力：巷道掘进引起围岩应力集中，重新分布。从内至外分别为：破裂区，塑性区，弹性区，原始应力区。</li>
+<li>支承压力显现的特征：塑性区宽度，支承压力峰值位置，支承压力影响范围，应力集中系数K（支承压力峰值/原岩铅直应力）</li>
+<li>巷道围岩应力影响带：巷道围岩应力受燃动的区域（超过原岩应力值5%）</li>
+<li>构造应力：指地壳构造运动在岩体中引起的应力，以水平应力为主，有明显方向性和区域性。</li>
+<li>水平应力对巷道稳定性的影响：薄层岩层滑移；厚层岩层剪切。</li>
+<li>合理的巷道布置方向：巷道轴向与构造应力方向平行/小于25-30°时影响不大，垂直时影响最大。</li>
+<li>巷道围岩变形量构成：顶板下沉，底鼓，巷帮移近等</li>
+<li>巷道围岩变形规律：五个阶段<br>（1）巷道掘进影响阶段<br>（2）掘进影响稳定阶段<br>（3）采动影响阶段<br>（4）采动影响稳定阶段<br>（5）二次采动影响阶段</li>
+<li>巷道位置类型：<br>（1）本煤层巷道：与回采工作面在同一层面的巷道。<br>（2）顶，底板巷道：位于回采工作面空间层面上/下方的巷道。</li>
+<li>巷道布置原则：<br>（1）时空上避开采掘活动的影响，最好布置在应力降低区。<br>（2）避免支承压力叠加，或尽量缩短支承压力影响时间<br>（3）布置巷道选择稳定岩层煤层。<br>（4）过构造时巷道轴向尽量垂直于构造<br>（5）相邻硐室巷道间岩柱宽度合理<br>（6）轴向平行构造应力方向</li>
+<li>巷道保护支护措施：<br>（1）卸载：通过钻孔，切槽，宽面掘巷，巷旁留专用卸压空间等方法卸压，转移巷道周围集中载荷。<br>（2）强化：通过围岩钻孔注浆，锚杆锚索支护，巷道周边喷浆，支架壁后充填，围岩疏干封闭等方法增加围岩强度，优化围岩受力条件和赋存环境。<br>（3）支护：架设支架对围岩施加径向力等，加大巷道围压。<br>巷道支护可分为巷内基本支架支护，巷内加强支架支护，巷旁支护，联合支护。</li>
+<li>巷道支架支护原理：<ul>
+<li>支架——围岩系统：顶板离层时：支架受上部岩层重量，给定载荷；顶板不离层，支架支撑力无法阻止岩层运动，给定变形。</li>
+<li>原理应用：<br>（1）二次支护<br>（2）柔性支护<br>（3）强调主动支护</li>
+</ul>
+</li>
+<li>巷道锚杆支护原理<br>（1）悬吊理论：锚杆支护作用为将软弱岩层悬吊在坚硬岩层上。<br>（2）组合梁理论：认为锚杆增加各层摩擦力，增加岩层间抗剪强度。<br>（3）组合拱理论：形成均匀压缩带，增强围岩强度。<br>（4）最大水平应力理论：锚杆约束岩层运动和错动<br>（5）围岩强度强化理论：我不到啊。</li>
+<li>巷道支护技术：<br>（1）巷道金属支架支护：矿用支护型钢，矿用工字钢支架，U型钢可缩支架，金属支架拉杆&amp;背板。<br>（2）巷道锚杆支护：<br>锚杆：锚固在岩体内维护围岩稳定的杆状结构物。</li>
+<li>巷道支护设计：<br>（1）：工程类比法<br>（2）：理论计算法<br>（3）：系统设计法</li>
+<li>无煤柱护巷：<br>（1）沿空掘巷：采空区相邻煤体边缘区域存在一个应力低于原岩应力低的卸压区。沿空掘巷分为：完全沿空掘巷；留小煤墙沿空掘巷；保留部分老巷沿空掘巷。<br>（2）沿空留巷：上区段工作面采过后，通过加强支护或其他有效方法，保留上区段运输平巷，作为下区段回风平巷。</li>
+<li>采区巷道保护：<br>（1）留煤柱护巷<br>（2）跨巷道回采卸压<br>（3）巷道围岩开槽卸压和松动卸压<br>（4）卸压巷硐卸压<br>（5）巷道围岩注浆加固<br>（6）巷道支架架后充填<br>（7）巷道锚注支护</li>
+</ul>
+<h1 id="煤矿冲击矿压现象与防治"><a href="#煤矿冲击矿压现象与防治" class="headerlink" title="煤矿冲击矿压现象与防治"></a>煤矿冲击矿压现象与防治</h1><h2 id="矿震与冲击矿压现象"><a href="#矿震与冲击矿压现象" class="headerlink" title="矿震与冲击矿压现象"></a>矿震与冲击矿压现象</h2><ul>
+<li>矿震：煤岩体内裂隙发育，弹性能突然释放并产生明显震动和声响的动力现象。</li>
+<li>冲击矿压：煤矿采掘过程中的一种动力现象，指巷道和采场周围煤岩体发生突然爆炸性破坏，积聚的弹性能释放将破碎煤岩抛向采掘空间，发出强烈震动，声响，产生大量煤尘。</li>
+<li>冲击矿压显现特点：突发性；瞬时震动性；巨大破坏性；复杂性。</li>
+<li>冲击矿压分类：<br>（1）显现强度：弹射；震动；弱冲击；强冲击。<br>（2）压力型；冲击型；冲击压力型。</li>
+<li>冲击矿压影响因素：<br>（1）自然地质因素（应力）<br>（2）开采技术（采动应力集中）</li>
+<li>经典冲击矿压理论：强度理论；刚度理论；能量理论；冲击倾向性理论。</li>
+<li>冲击矿压预测目标：时间，地点，大小。</li>
+<li>冲击矿压预测预报方法： 综合指数法，煤层钻屑法，微震法，地音法。</li>
+<li>冲击矿压防治：<br>（1）合理开拓布置和开采方式<br>（2）开采解放层<br>（3）卸压爆破<br>（4）煤层注水<br>（5）钻孔卸压<br>（6）定向裂缝<h1 id="完"><a href="#完" class="headerlink" title="完"></a>完</h1></li>
+</ul>
+
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/%E7%AC%94%E8%AE%B0/" rel="tag"># 笔记</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2022/05/01/220429/" rel="prev" title="220429">
+      <i class="fa fa-chevron-left"></i> 220429
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/2022/05/24/ch5%E7%9F%BF%E5%8E%8B%E7%AC%94%E8%AE%B0/" rel="next" title="矿压笔记-3">
+      矿压笔记-3 <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E9%87%87%E5%8C%BA%E5%B7%B7%E9%81%93%E7%9F%BF%E5%8E%8B%E6%98%BE%E7%8E%B0%E4%B8%8E%E6%8E%A7%E5%88%B6"><span class="nav-number">1.</span> <span class="nav-text">采区巷道矿压显现与控制</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%85%A4%E7%9F%BF%E5%86%B2%E5%87%BB%E7%9F%BF%E5%8E%8B%E7%8E%B0%E8%B1%A1%E4%B8%8E%E9%98%B2%E6%B2%BB"><span class="nav-number">2.</span> <span class="nav-text">煤矿冲击矿压现象与防治</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%9F%BF%E9%9C%87%E4%B8%8E%E5%86%B2%E5%87%BB%E7%9F%BF%E5%8E%8B%E7%8E%B0%E8%B1%A1"><span class="nav-number">2.1.</span> <span class="nav-text">矿震与冲击矿压现象</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%AE%8C"><span class="nav-number">3.</span> <span class="nav-text">完</span></a></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="CMCanteen"
+      src="/images/avatar.jpg">
+  <p class="site-author-name" itemprop="name">CMCanteen</p>
+  <div class="site-description" itemprop="description">menu</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">7</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">2</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2022</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">CMCanteen</span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://mist.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Mist</a> 强力驱动
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/muse.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+      
+
+<script>
+  if (typeof MathJax === 'undefined') {
+    window.MathJax = {
+      loader: {
+          load: ['[tex]/mhchem'],
+        source: {
+          '[tex]/amsCd': '[tex]/amscd',
+          '[tex]/AMScd': '[tex]/amscd'
+        }
+      },
+      tex: {
+        inlineMath: {'[+]': [['$', '$']]},
+          packages: {'[+]': ['mhchem']},
+        tags: 'ams'
+      },
+      options: {
+        renderActions: {
+          findScript: [10, doc => {
+            document.querySelectorAll('script[type^="math/tex"]').forEach(node => {
+              const display = !!node.type.match(/; *mode=display/);
+              const math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display);
+              const text = document.createTextNode('');
+              node.parentNode.replaceChild(text, node);
+              math.start = {node: text, delim: '', n: 0};
+              math.end = {node: text, delim: '', n: 0};
+              doc.math.push(math);
+            });
+          }, '', false],
+          insertedScript: [200, () => {
+            document.querySelectorAll('mjx-container').forEach(node => {
+              let target = node.parentNode;
+              if (target.nodeName.toLowerCase() === 'li') {
+                target.parentNode.classList.add('has-jax');
+              }
+            });
+          }, '', false]
+        }
+      }
+    };
+    (function () {
+      var script = document.createElement('script');
+      script.src = '//cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js';
+      script.defer = true;
+      document.head.appendChild(script);
+    })();
+  } else {
+    MathJax.startup.document.state(0);
+    MathJax.texReset();
+    MathJax.typeset();
+  }
+</script>
+
+    
+
+  
+
+</body>
+</html>
